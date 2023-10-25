@@ -12,13 +12,13 @@ func SetupRouter() *gin.Engine {
 	s := service.NewService()
 	h := NewHandler(s)
 	
-	// get token
+	// get token API 
 	w.POST("/gettoken", h.GetToken)
 
 	//middlewares
 	w.Use(middlewares.CheckToken)
 
-	//get days
+	//get days API 
 	w.POST("/getdays", h.GetDays)
 	return w
 }

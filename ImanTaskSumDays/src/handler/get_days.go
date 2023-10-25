@@ -8,13 +8,13 @@ import (
 )
 
 func (h *Handler) GetDays(c *gin.Context) {
-
+	// days get 
 	days := h.service.Time()
 
 	// error algoretm sum of days
 	if days == 0 {
 		c.JSON(http.StatusBadRequest, models.Error{
-			Error: "days algoretm error",
+			Error: "days algorethm error",
 		})
 		return
 	}

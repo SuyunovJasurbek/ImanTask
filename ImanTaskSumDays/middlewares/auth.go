@@ -27,7 +27,7 @@ func CheckToken(c *gin.Context) {
 	//1.empty check
 	if token == "" {
 		c.AbortWithStatusJSON(403, models.Error{
-			Error: "token  empty",
+			Error: "token not fount",
 		})
 		return
 	}
@@ -44,10 +44,11 @@ func CheckToken(c *gin.Context) {
 	token_string, err :=c.Cookie("token")
 	if err!= nil {
 		c.AbortWithStatusJSON(401, models.Error{
-			Error: "could not find token from cookie, pleace gettoken",
+			Error: "token expired, pleace gettoken",
 		})
 		return
 	}
+	
 	//4. token equalizing
 	if token != token_string {
 		c.AbortWithStatusJSON(403, models.Error{
