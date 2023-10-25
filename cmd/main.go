@@ -1,8 +1,8 @@
 package main
 
 import (
-	"days_limit/config"
-	"days_limit/src/handler"
+	"sum_days/config"
+	"sum_days/src/handler"
 	"fmt"
 )
 

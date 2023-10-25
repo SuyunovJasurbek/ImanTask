@@ -1,6 +1,6 @@
 package handler
 
-import "days_limit/src/service"
+import "sum_days/src/service"
 
 type Handler struct {
 	service *service.Service

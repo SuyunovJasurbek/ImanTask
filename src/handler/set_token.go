@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"days_limit/middlewares"
-	"days_limit/models"
+	"sum_days/middlewares"
+	"sum_days/models"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

@@ -1,4 +1,4 @@
-module days_limit
+module sum_days
 
 go 1.19
 

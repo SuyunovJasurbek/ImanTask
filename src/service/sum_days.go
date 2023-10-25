@@ -28,7 +28,7 @@ func (s *Service) Time() int {
 	}
 	for i := t_year; i <= 2025; i++ {
 
-		// 2025 yildagi biror sanadan 1-fevralgacha bulgn kundagi xolat uchun
+		// 2025 yildagi biror sanadan 1-fevralgacha bulgan kundagi xolat uchun
 		if t_year == 2025 {
 			Sum = t_day
 			break
@@ -37,18 +37,18 @@ func (s *Service) Time() int {
 		// 2025 yilgacha bulgan davrdagi xoxlagan vaqt uchun
 		if i == t_year {
 			if !Leap(t_year) {
-				Sum = (month_before[12] - (month_before[int(t_month)-1]) - t_day) + Sum
+				Sum += (month_before[12] - (month_before[int(t_month)-1]) - t_day)
 			} else {
-				Sum = (month_before[12] - (month_before[int(t_month)-1]) - t_day) + Sum + 1
+				Sum += (month_before[12] - (month_before[int(t_month)-1]) - t_day) + 1
 			}
 		} else if i > t_year && i < 2025 {
 			if Leap(i) {
-				Sum = Sum + 366
+				Sum += 366
 			} else {
-				Sum = Sum + 365
+				Sum += 365
 			}
 		} else if i == 2025 {
-			Sum = Sum + 31 // Februar
+			Sum += 31 // Februar
 			break
 		}
 	}

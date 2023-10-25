@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"days_limit/middlewares"
-	"days_limit/src/service"
+	"sum_days/middlewares"
+	"sum_days/src/service"
 
 	"github.com/gin-gonic/gin"
 )

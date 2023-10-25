@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"days_limit/models"
+	"sum_days/models"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
