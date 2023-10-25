@@ -17,7 +17,7 @@ func Load() Config {
 		fmt.Println("No.. .env file ")
 	}
 	config := Config{}
-	config.HTTPPort = cast.ToString(getOrReturnDefaultValue("HTTP_PORT", ":7053"))
+	config.HTTPPort = cast.ToString(getOrReturnDefaultValue("HTTP_PORT", "7053"))
 	return config
 }
 

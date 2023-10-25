@@ -9,5 +9,5 @@ import (
 func main() {
 	cfg := config.Load()
 	r := handler.SetupRouter()
-	r.Run(fmt.Sprintf(":s", cfg.HTTPPort))
+	r.Run(fmt.Sprintf(":%s", cfg.HTTPPort))
 }

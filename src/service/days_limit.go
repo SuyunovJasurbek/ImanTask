@@ -1,8 +1,6 @@
 package service
 
-// Console ishladi , endi shuni API ga boglash kerak :)
 import (
-	"fmt"
 	"time"
 )
 
@@ -54,10 +52,10 @@ func (s *Service) Time() int {
 			break
 		}
 	}
-	fmt.Println(Sum)
 	return Sum
 }
 
+// Kabisa yiliga tekshirish
 func Leap(year int) bool {
 	return year%4 == 0 && (year%100 != 0 || year%400 == 0)
 }
