@@ -8,7 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func SetGetToken(c *gin.Context) *string {
+func SetToken(c *gin.Context) *string {
 
 	// get token uuid example
 	token := helper.GenerateUUID()
