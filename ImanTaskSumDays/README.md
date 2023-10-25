@@ -8,10 +8,8 @@
 
 # Working with the API
 
-## Token get 
-## POST method:
-http://localhost:8080/gettoken
+# Token get 
+## POST method: http://localhost:8080/gettoken
 
-## Sum Days get
-## POST method:
-http://localhost:8080/getdays
+# Sum Days get
+## POST method:http://localhost:8080/getdays
