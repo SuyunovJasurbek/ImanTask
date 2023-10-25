@@ -9,7 +9,7 @@ import (
 )
 
 func (h *Handler) GetToken(c *gin.Context) {
-	token := middlewares.SetGetToken(c)
+	token := middlewares.SetToken(c)
 	if token!= nil {
 		c.JSON(http.StatusOK, models.Message{
 			Token: *token,
