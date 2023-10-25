@@ -11,5 +11,5 @@
 # Token get 
 ## POST method: http://localhost:8080/gettoken
 
-# Sum Days get
-## POST method:http://localhost:8080/getdays
+# Days get
+## POST method: http://localhost:8080/getdays
