@@ -7,7 +7,7 @@
     3. make run
 
 # Working with the API
-
+# Use Postman : 
 # Token get 
 ## POST method: http://localhost:8080/gettoken
 
